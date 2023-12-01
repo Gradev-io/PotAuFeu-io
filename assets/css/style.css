@@ -1,0 +1,816 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+@media only screen and (min-width: 920px) {
+  .header {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  .header > .menu-icon {
+    display: none;
+  }
+  .header > a {
+    text-decoration: none;
+    color: black;
+    font-family: segoe UI;
+    font-size: small;
+    transition: all 0.3s ease-in-out;
+  }
+  .header > a:hover {
+    color: rgb(100, 144, 155);
+  }
+  .header > .logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .logo > #logo-1 {
+    height: 80px;
+    width: 60px;
+  }
+
+  .main-container {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    z-index: 0;
+    position: relative;
+  }
+
+  .main-container > #img-main {
+    width: 100%;
+    filter: brightness(40%);
+  }
+  .main-container > .sub-main-container {
+    position: absolute;
+    top: 30%;
+  }
+  .sub-main-flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .sub-main-flex > #text-plan {
+    font-family: stalemate;
+    color: whitesmoke;
+    font-size: 90px;
+  }
+  .sub-main-flex > .button {
+    border-radius: 100px;
+    height: 2rem;
+    width: 8rem;
+    border: none;
+    background-color: whitesmoke;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .sub-main-flex > .button > a {
+    text-decoration: none;
+    color: black;
+    font-family: oxygen;
+    font-weight: bold;
+    font-size: small;
+  }
+  .sub-main-flex > .button:hover {
+    box-shadow: 0px 0px 16px rgb(255, 255, 255);
+    width: 9rem;
+  }
+  .icons {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .icons > img {
+    height: 20px;
+    width: 20px;
+    margin-right: 1rem;
+    cursor: pointer;
+  }
+
+  .copy {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+    flex-direction: column;
+    margin-bottom: 1rem;
+  }
+  .copy > .copywrites-1 {
+    font-family: verdana;
+  }
+  .copy > .copywrites-2 {
+    font-family: verdana;
+  }
+  .copywrites-1 > a {
+    text-decoration: none;
+    color: darkgreen;
+  }
+  .copywrites-2 > a {
+    text-decoration: none;
+    color: darkslategrey;
+  }
+  .about {
+    color: rgb(89, 89, 89);
+    font-family: futura bk bt;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+    font-size: larger;
+  }
+  .about > .about-line {
+    height: 2px;
+    width: 60px;
+    margin-top: 1rem;
+    background-color: rgb(206, 206, 206);
+  }
+  .container-about-1 {
+    margin-top: 8rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  .container-about-1 > img {
+    height: 200px;
+    width: 300px;
+    border-radius: 15px;
+  }
+
+  .container-about-1 > .content {
+    height: 200px;
+    width: 300px;
+    font-family: futura bk bt;
+  }
+
+  .container-about-2 {
+    margin-top: 4rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  .container-about-2 > img {
+    height: 300px;
+    width: 300px;
+    border-radius: 15px;
+  }
+  .container-about-2 > .content {
+    height: 200px;
+    width: 300px;
+    font-family: futura bk bt;
+  }
+  .container-about-3 {
+    margin-top: 6rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-bottom: 5rem;
+  }
+  .container-about-3 > img {
+    height: 200px;
+    width: 300px;
+    border-radius: 15px;
+  }
+  .container-about-3 > .content {
+    height: 200px;
+    width: 300px;
+    font-family: futura bk bt;
+  }
+  .content > h3 {
+    color: rgb(66, 66, 66);
+    font-style: italic;
+    margin-bottom: 2rem;
+  }
+
+  .content > p {
+    color: grey;
+  }
+  .reserve-containers-first {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: row;
+    margin-top: 10rem;
+  }
+  .reserve-container-1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .reserve-container-1-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 30px;
+    background-color: #181818;
+  }
+  .reserve-container-1 > #reserve-container-1-head {
+    color: rgb(68, 68, 68);
+    font-family: segoe ui symbol;
+    font-size: large;
+    margin-bottom: 2rem;
+  }
+  .reserve-container-1 > .reserve-container-1-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .reserve-container-1-box > .reserve-container-1-box-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .reserve-container-1-box-icon-1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    color: whitesmoke;
+    font-family: segoe ui symbol;
+    font-size: small;
+  }
+  .reserve-container-1-box-icon-1 > img {
+    height: 30px;
+    width: 20px;
+    margin-right: 10px;
+  }
+
+  .reserve-container-1-box-icon-2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    color: whitesmoke;
+    font-family: segoe ui symbol;
+    font-size: small;
+    margin-top: 2rem;
+  }
+  .reserve-container-1-box-icon-2 > img {
+    height: 18px;
+    width: 30px;
+    margin-right: 10px;
+  }
+
+  .reserve-container-1-box-icon-3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    color: whitesmoke;
+    font-family: segoe ui symbol;
+    font-size: small;
+    margin-top: 2rem;
+  }
+  .reserve-container-1-box-icon-3 > img {
+    height: 20px;
+    width: 20px;
+    margin-right: 10px;
+  }
+  .reserve-container-2 {
+    height: 250px;
+    width: 1px;
+    background-color: #181818;
+  }
+  .reserve-container-3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .reserve-container-3 > .reserve-container-3-inputs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .reserve-container-3 > #reserve-container-3-head {
+    color: rgb(68, 68, 68);
+    font-family: segoe ui symbol;
+    font-size: large;
+    margin-bottom: 2rem;
+  }
+  .reserve-container-3-inputs > input {
+    width: 300px;
+    height: 25px;
+    margin-bottom: 1rem;
+    border-radius: 100px;
+    border: rgb(158, 158, 158) 0.5px solid;
+    padding: 10px;
+    transition: all 0.3s ease-in-out;
+  }
+  input:focus {
+    width: 305px;
+  }
+  input::placeholder {
+    font-family: segoe ui symbol;
+    color: grey;
+  }
+
+  .reserve-container-3-inputs > .reserve-button {
+    border-radius: 100px;
+    height: 2rem;
+    width: 8rem;
+    border: none;
+    background-color: black;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .reserve-container-3-inputs > .reserve-button > a {
+    text-decoration: none;
+    color: whitesmoke;
+    font-family: oxygen;
+    font-weight: bold;
+    font-size: small;
+  }
+  .reserve-containers-second {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 4rem;
+  }
+  .reserve-containers-second > img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+  }
+
+  .reserve-containers-third {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3rem;
+  }
+  .reserve-containers-third > img {
+    height: 120px;
+    width: 100px;
+  }
+
+  .reserve-containers-fourth {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 7rem;
+    background-color: #181818;
+    padding: 20px;
+  }
+  .reserve-container-fourth-footer-one {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    margin-top: 5rem;
+  }
+  .reserve-container-fourth-footer-one
+    > .reserve-container-fourth-footer-box-icons {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .reserve-container-fourth-footer-box-icon-1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    margin-bottom: 1rem;
+  }
+  .reserve-container-fourth-footer-box-icon-2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    margin-bottom: 1rem;
+  }
+  .reserve-container-fourth-footer-box-icon-3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+  }
+  .reserve-container-fourth-footer-box-icon-1 > img {
+    height: 20px;
+    width: 13px;
+    margin-right: 10px;
+  }
+  .reserve-container-fourth-footer-box-icon-2 > img {
+    height: 10px;
+    width: 25px;
+    margin-right: 10px;
+  }
+  .reserve-container-fourth-footer-box-icon-3 > img {
+    height: 17px;
+    width: 17px;
+    margin-right: 10px;
+  }
+  .reserve-container-fourth-footer-box-icon-1 > h3 {
+    color: whitesmoke;
+    font-family: segoe ui symbol;
+    font-size: small;
+  }
+  .reserve-container-fourth-footer-box-icon-2 > h3 {
+    color: whitesmoke;
+    font-family: segoe ui symbol;
+    font-size: small;
+  }
+
+  .reserve-container-fourth-footer-box-icon-3 > h3 {
+    color: whitesmoke;
+    font-family: segoe ui symbol;
+    font-size: small;
+  }
+  .reserve-container-fourth-footer-box-pot > img {
+    height: 80px;
+    width: 200px;
+  }
+  .reserve-container-fourth-footer-two {
+    margin-top: 5rem;
+  }
+  .reserve-container-fourth-footer-two > .copy {
+    color: whitesmoke;
+  }
+
+  .menus-circles-launch {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 5rem;
+  }
+  .menus-circles-launch > .circle-1 {
+    border-radius: 50%;
+    height: 100px;
+    width: 100px;
+    background-color: #181818;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.4s all ease-in-out;
+    cursor: pointer;
+  }
+  .menus-circles-launch > .circle-1:hover {
+    background-color: #181818ba;
+  }
+  .menus-circles-launch > .circle-1 > a {
+    text-decoration: none;
+    font-family: segoe UI;
+    color: whitesmoke;
+    font-size: small;
+  }
+  .menus-circles-launch > .circle-2 {
+    border-radius: 50%;
+    height: 100px;
+    width: 100px;
+    background-color: #efefef;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.4s all ease-in-out;
+    cursor: pointer;
+  }
+
+  .menus-circles-launch > .circle-2 > a {
+    text-decoration: none;
+    font-family: segoe UI;
+    color: #181818;
+    font-size: small;
+  }
+
+  .menus-circles-launch > .circle-3 {
+    border-radius: 50%;
+    height: 100px;
+    width: 100px;
+    background-color: #efefef;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.4s all ease-in-out;
+    cursor: pointer;
+  }
+
+  .menus-circles-launch > .circle-3 > a {
+    text-decoration: none;
+    font-family: segoe UI;
+    color: #181818;
+    font-size: small;
+  }
+
+  .menus-circles-launch > .circle-4 {
+    border-radius: 50%;
+    height: 100px;
+    width: 100px;
+    background-color: #efefef;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.4s all ease-in-out;
+    cursor: pointer;
+  }
+
+  .menus-circles-launch > .circle-4 > a {
+    text-decoration: none;
+    font-family: segoe UI;
+    color: #181818;
+    font-size: small;
+  }
+  .menu-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 8rem;
+    margin-bottom: 5rem;
+  }
+  .menu-card-box {
+    border: 1px solid #181818;
+    height: auto;
+    width: 80%;
+  }
+  .menu-card-box-data {
+    padding: 50px;
+  }
+  .menu-card-box-data > h4 {
+    font-family: segoe UI;
+    font-size: large;
+    color: black;
+    font-weight: 400;
+  }
+  .menu-card-box-data > h5 {
+    font-family: segoe UI;
+    font-size: medium;
+    color: grey;
+    font-weight: lighter;
+    font-style: italic;
+    margin-bottom: 1rem;
+  }
+
+  .menus-circles-Dinner {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 5rem;
+  }
+  .menus-circles-Dinner > .circle-1 {
+    border-radius: 50%;
+    height: 100px;
+    width: 100px;
+    background-color: #efefef;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.4s all ease-in-out;
+    cursor: pointer;
+  }
+
+  .menus-circles-Dinner > .circle-1 > a {
+    text-decoration: none;
+    font-family: segoe UI;
+    color: #181818;
+    font-size: small;
+  }
+  .menus-circles-Dinner > .circle-2 {
+    border-radius: 50%;
+    height: 100px;
+    width: 100px;
+    background-color: #181818;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.4s all ease-in-out;
+    cursor: pointer;
+  }
+  .menus-circles-Dinner > .circle-2:hover {
+    background-color: #181818ba;
+  }
+  .menus-circles-Dinner > .circle-2 > a {
+    text-decoration: none;
+    font-family: segoe UI;
+    color: whitesmoke;
+    font-size: small;
+  }
+
+  .menus-circles-Dinner > .circle-3 {
+    border-radius: 50%;
+    height: 100px;
+    width: 100px;
+    background-color: #efefef;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.4s all ease-in-out;
+    cursor: pointer;
+  }
+
+  .menus-circles-Dinner > .circle-3 > a {
+    text-decoration: none;
+    font-family: segoe UI;
+    color: #181818;
+    font-size: small;
+  }
+
+  .menus-circles-Dinner > .circle-4 {
+    border-radius: 50%;
+    height: 100px;
+    width: 100px;
+    background-color: #efefef;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.4s all ease-in-out;
+    cursor: pointer;
+  }
+
+  .menus-circles-Dinner > .circle-4 > a {
+    text-decoration: none;
+    font-family: segoe UI;
+    color: #181818;
+    font-size: small;
+  }
+
+  .menus-circles-beverages {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 5rem;
+  }
+  .menus-circles-beverages > .circle-1 {
+    border-radius: 50%;
+    height: 100px;
+    width: 100px;
+    background-color: #efefef;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.4s all ease-in-out;
+    cursor: pointer;
+  }
+
+  .menus-circles-beverages > .circle-1 > a {
+    text-decoration: none;
+    font-family: segoe UI;
+    color: #181818;
+    font-size: small;
+  }
+  .menus-circles-beverages > .circle-2 {
+    border-radius: 50%;
+    height: 100px;
+    width: 100px;
+    background-color: #efefef;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.4s all ease-in-out;
+    cursor: pointer;
+  }
+
+  .menus-circles-beverages > .circle-2 > a {
+    text-decoration: none;
+    font-family: segoe UI;
+    color: #181818;
+    font-size: small;
+  }
+
+  .menus-circles-beverages > .circle-3 {
+    border-radius: 50%;
+    height: 100px;
+    width: 100px;
+    background-color: #181818;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.4s all ease-in-out;
+    cursor: pointer;
+  }
+
+  .menus-circles-beverages > .circle-3 > a {
+    text-decoration: none;
+    font-family: segoe UI;
+    color: whitesmoke;
+    font-size: small;
+  }
+  .menus-circles-beverages > .circle-3:hover {
+    background-color: #181818ba;
+  }
+  .menus-circles-beverages > .circle-4 {
+    border-radius: 50%;
+    height: 100px;
+    width: 100px;
+    background-color: #efefef;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.4s all ease-in-out;
+    cursor: pointer;
+  }
+
+  .menus-circles-beverages > .circle-4 > a {
+    text-decoration: none;
+    font-family: segoe UI;
+    color: #181818;
+    font-size: small;
+  }
+
+  .menus-circles-extra {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 5rem;
+  }
+  .menus-circles-extra > .circle-1 {
+    border-radius: 50%;
+    height: 100px;
+    width: 100px;
+    background-color: #efefef;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.4s all ease-in-out;
+    cursor: pointer;
+  }
+
+  .menus-circles-extra > .circle-1 > a {
+    text-decoration: none;
+    font-family: segoe UI;
+    color: #181818;
+    font-size: small;
+  }
+  .menus-circles-extra > .circle-2 {
+    border-radius: 50%;
+    height: 100px;
+    width: 100px;
+    background-color: #efefef;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.4s all ease-in-out;
+    cursor: pointer;
+  }
+
+  .menus-circles-extra > .circle-2 > a {
+    text-decoration: none;
+    font-family: segoe UI;
+    color: #181818;
+    font-size: small;
+  }
+
+  .menus-circles-extra > .circle-3 {
+    border-radius: 50%;
+    height: 100px;
+    width: 100px;
+    background-color: #efefef;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.4s all ease-in-out;
+    cursor: pointer;
+  }
+
+  .menus-circles-extra > .circle-3 > a {
+    text-decoration: none;
+    font-family: segoe UI;
+    color: #181818;
+    font-size: small;
+  }
+
+  .menus-circles-extra > .circle-4 {
+    border-radius: 50%;
+    height: 100px;
+    width: 100px;
+    background-color: #181818;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.4s all ease-in-out;
+    cursor: pointer;
+  }
+
+  .menus-circles-extra > .circle-4 > a {
+    text-decoration: none;
+    font-family: segoe UI;
+    color: whitesmoke;
+    font-size: small;
+  }
+  .menus-circles-extra > .circle-4:hover {
+    background-color: #181818ba;
+  }
+}
