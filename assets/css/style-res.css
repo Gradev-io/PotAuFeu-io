@@ -83,7 +83,7 @@
   .sub-main-flex > #text-plan {
     font-family: stalemate;
     color: black;
-    font-size: 90px;
+    font-size: 4rem;
   }
   .sub-main-flex > .button {
     border-radius: 100px;
@@ -109,9 +109,12 @@
     width: 9rem;
   }
   footer {
-    position: absolute;
-    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
     width: 100%;
+    background-color: #181818;
   }
   footer > .icons {
     margin-top: 5rem;
@@ -133,6 +136,7 @@
     align-items: center;
     margin-top: 4rem;
     flex-direction: column;
+    width: 100%;
     background-color: #181818;
     padding: 10px;
   }
